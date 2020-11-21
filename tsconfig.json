@@ -1,0 +1,52 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
+    "jsx": "react",
+    "keyofStringsOnly": true,
+    "lib": [
+      "es6",
+      "dom"
+    ],
+    "module": "es6",
+    "moduleResolution": "node",
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "outDir": "./dist",
+    "sourceMap": true,
+    "strictNullChecks": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "target": "es6",
+    "paths": {
+      "@admin/*": [
+        "src/apps/admin_app/*"
+      ],
+      "@guest/*": [
+        "src/apps/guest_app/*"
+      ],
+      "@localization/*": [
+        "src/localization/*"
+      ],
+      "@main/*": [
+        "src/apps/main_app/*"
+      ],
+      "@styles/*": [
+        "src/styles/*"
+      ],
+      "@user/*": [
+        "src/apps/user_app/*"
+      ],
+    }
+  },
+  "exclude": [
+    "config",
+    "node_modules",
+    "public",
+  ]
+}

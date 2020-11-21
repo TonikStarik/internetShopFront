@@ -1,0 +1,124 @@
+@import '@styles/index';
+
+.default-layout {
+  height: 100%;
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $mineShaft;
+    // height: 45px;
+
+    .left-side {
+      display: flex;
+
+      &__text {
+        color: $dustyGray;
+      }
+
+      &__currency {
+        color: $dustyGray;
+        margin-left: 5px;
+      }
+    }
+
+    .right-side {
+      display: flex;
+      align-items: center;
+
+      &__authorization-controller-wrapper {
+        margin-right: 82px;
+
+        .register-link {
+          color: $dustyGray;
+        }
+
+        .sign-in-link {
+          color: $dustyGray;
+          margin-left: 33px;
+        }
+      }
+
+      .ant-btn:hover,
+      .ant-btn:focus {
+        background-color: $robinsEggBlue;
+      }
+
+      &__shopping-cart-wrapper {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border-radius: 0;
+        min-width: 147px;
+        border: none;
+        background-color: $robinsEggBlue;
+
+        .shopping-cart {
+          color: $white;
+          font-size: 17px;
+          margin-top: 5px;
+        }
+
+        .text-wrapper {
+          display: flex;
+          align-items: center;
+
+          &__text {
+            color: $white;
+          }
+          
+          &__arrow-down {
+            color: $white;
+            margin-top: 4px;
+            margin-left: 6px;
+            font-size: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  &__content {
+    display: flex;
+    height: calc(100% - 90px);
+    width: 100%;
+  }
+
+  &__footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $mineShaft;
+    height: 45px;
+
+    .left-side {
+      display: flex;
+      align-items: center;
+
+      &__copyright,
+      &__company-name {
+        color: $dustyGray;
+      }
+
+      &__copyright {
+        margin-right: 4px;
+      }
+    }
+
+    .right-side {
+      display: flex;
+
+      &__design-name {
+        color: $dustyGray;
+      }
+
+      &__developer-name {
+        color: $dustyGray;
+        margin-left: 35px;
+      }
+    }
+  }
+}
