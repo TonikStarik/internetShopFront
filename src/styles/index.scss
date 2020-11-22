@@ -10,7 +10,22 @@ body,
   margin: 0;
 }
 
-p {
+html,
+body,
+#root,
+.application-wrapper {
+  height: 100%;
+  width: 100% !important;
+  margin: 0;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
   color: $black;
 }

@@ -14,6 +14,8 @@ import { GuestRouters } from '@guest/pages/GuestRouters';
 
 import '../node_modules/antd/dist/antd.css';
 
+/* @TODO: make a correct BEM */
+
 const App = () => {
   // const getRouting = () => {
   //   switch (true) {

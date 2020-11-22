@@ -1,6 +1,63 @@
-.default-layout {
+@import '@styles/index';
 
+.default-layout {
   &__header {
+    .top-block {
+      display: flex;
+      align-items: center;
+      background-color: $mineShaft;
+
+      .currency-wrapper {
+        display: flex;
+        align-items: center;
+        float: left;
+
+        &__currency-text,
+        &__arrow-icon {
+          color: $dustyGray;
+        }
+
+        &__currency-text {
+          margin: 0;
+        }
+
+        &__arrow-icon {
+          margin-left: 5px;
+        }
+      }
+
+      &__unknown-block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .links-wrapper {
+          &__registration-link,
+          &__authorization-link {
+            color: $dustyGray;
+          }
+
+          &__registration-link {
+            margin-right: 30px;
+          }
+        }
+      }
+    }
+
+    .bottom-block {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+
+      .catalogs-menu-header {
+        display: flex;
+
+        & > p {
+          margin: 0;
+          margin-right: 10px;
+        }
+      }
+    }
 
     .top-block,
     .bottom-block {
@@ -8,3 +65,9 @@
     }
   }
 }
+
+// .currency-menu {
+//   .ant-dropdown-menu-item {
+//     color: $dustyGray;
+//   }
+// }

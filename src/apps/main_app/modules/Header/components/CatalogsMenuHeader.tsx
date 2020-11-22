@@ -33,32 +33,32 @@ export const CatalogsMenuHeader = () => {
   );
 
   return (
-    <div>
-      <Dropdown overlay={mensMenu}>
+    <div className="catalogs-menu-header">
+      <Dropdown className="catalogs-menu-header__mens-menu" overlay={mensMenu}>
         <p>
           MENS <DownOutlined />
         </p>
       </Dropdown>
 
-      <Dropdown overlay={mensMenu}>
+      <Dropdown className="catalogs-menu-header__womens-menu" overlay={mensMenu}>
         <p>
           WOMENS <DownOutlined />
         </p>
       </Dropdown>
 
-      <Dropdown overlay={mensMenu}>
+      <Dropdown className="catalogs-menu-header__brand-menu" overlay={mensMenu}>
         <p>
           THE BRAND <DownOutlined />
         </p>
       </Dropdown>
 
-      <Dropdown overlay={mensMenu}>
+      <Dropdown className="catalogs-menu-header__local-store-menu" overlay={mensMenu}>
         <p>
           LOCAL STORES <DownOutlined />
         </p>
       </Dropdown>
 
-      <Dropdown overlay={mensMenu}>
+      <Dropdown className="catalogs-menu-header__look-book-menu" overlay={mensMenu}>
         <p>
           LOOK BOOK <DownOutlined />
         </p>

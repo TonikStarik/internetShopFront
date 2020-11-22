@@ -20,26 +20,21 @@ export const CurrencyHeader = () => {
   }
 
   const currencyMenu = (
-    <Menu onClick={onChangeCurrency}>
-      <Menu.Item key="BYN">{BYN}</Menu.Item>
+    <Menu className="currency-menu" onClick={onChangeCurrency}>
+      <Menu.Item className="currency-menu__value" key="BYN">{BYN}</Menu.Item>
 
-      <Menu.Item key="EUR">{EUR}</Menu.Item>
+      <Menu.Item className="currency-menu__value" key="EUR">{EUR}</Menu.Item>
 
-      <Menu.Item key="USD">{USD}</Menu.Item>
+      <Menu.Item className="currency-menu__value" key="USD">{USD}</Menu.Item>
     </Menu>
   )
 
   return (
-    <Dropdown
-      overlay={currencyMenu}
-      trigger={['click']}
-    >
-      <div>
-        <p>{loc.layout.header.currency}</p>
+    <Dropdown overlay={currencyMenu} trigger={['click']}>
+      <div className="currency-wrapper">
+        <p className="currency-wrapper__currency-text">{`${loc.layout.header.currency} ${currency}`}</p>
 
-        <p>{currency}</p>
-
-        <DownOutlined />
+        <DownOutlined className="currency-wrapper__arrow-icon" />
       </div>
     </Dropdown>
   )
