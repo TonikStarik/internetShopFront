@@ -20,7 +20,9 @@ export const SaleArea = () => {
   return (
     <div className="sale-area">
       <div className="sale-area__section">
-        {sectionNames.map((section: string) => <p key={section} className="section-name">{section}</p>)}
+        {sectionNames.map((section: string) =>
+          <p key={section} className="section-name">{section}</p>
+        )}
       </div>
 
       <ClothesCard data={popularColthes} />
