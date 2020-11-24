@@ -66,8 +66,17 @@
   }
 }
 
-// .currency-menu {
-//   .ant-dropdown-menu-item {
-//     color: $dustyGray;
-//   }
-// }
+.catalog-menu {
+  .catalog-menu__paragraphs {
+    & > .ant-dropdown-menu-item-group-list {
+      display: flex;
+    }
+  }
+
+  &__image-wrapper {
+    .image {
+      height: 200px;
+      width: 400px;
+    }
+  }
+}

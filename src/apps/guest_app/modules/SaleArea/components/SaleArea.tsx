@@ -4,7 +4,9 @@ import { useQuery } from '@apollo/client';
 
 import { ClothesCard } from '@guest/modules/SaleArea/components';
 import { GetPopularClothes } from '@guest/modules/SaleArea/graphql';
-import { ClothesProps } from '@guest/modules/SaleArea/types';
+import { sectionNames } from '@guest/modules/SaleArea/constants';
+
+import '@guest/modules/SaleArea/styles';
 
 export const SaleArea = () => {
   const {
@@ -13,28 +15,15 @@ export const SaleArea = () => {
     // error
   } = useQuery(GetPopularClothes);
 
+  const popularColthes = data && data.getPopularClothes;
+
   return (
-    <div>
-      <div>
-        <p>Popular</p>
-
-        <p>New arrivals</p>
-
-        <p>Best sellers</p>
-
-        <p>Special offers</p>
-
-        <p>Coming soon</p>
+    <div className="sale-area">
+      <div className="sale-area__section">
+        {sectionNames.map((section: string) => <p key={section} className="section-name">{section}</p>)}
       </div>
 
-      <div>
-        {data && data.getPopularClothes.map((item: ClothesProps) =>
-          <ClothesCard
-            key={item.id}
-            data={item}
-          />
-        )}
-      </div>
+      <ClothesCard data={popularColthes} />
     </div>
   )
 }
