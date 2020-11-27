@@ -1,11 +1,22 @@
+const POPULAR_SECTION_VALUE = 'Popular';
+const NEW_ARRIVALS_SECTION_VALUE = 'New arrivals';
+const BEST_SELLERS_SECTION_VALUE = 'Best sellers';
+const SPECIAL_OFFERS_SECTION_VALUE = 'Special offers';
+const COMING_SOON_SECTION_VALUE = 'Coming soon';
+
 const sectionNames = [
-  'Popular',
-  'New arrivals',
-  'Best sellers',
-  'Special offers',
-  'Coming soon',
+  POPULAR_SECTION_VALUE,
+  NEW_ARRIVALS_SECTION_VALUE,
+  BEST_SELLERS_SECTION_VALUE,
+  SPECIAL_OFFERS_SECTION_VALUE,
+  COMING_SOON_SECTION_VALUE,
 ];
 
 export {
+  BEST_SELLERS_SECTION_VALUE,
+  COMING_SOON_SECTION_VALUE,
+  NEW_ARRIVALS_SECTION_VALUE,
+  POPULAR_SECTION_VALUE,
+  SPECIAL_OFFERS_SECTION_VALUE,
   sectionNames,
 };
